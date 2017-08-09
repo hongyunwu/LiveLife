@@ -19,6 +19,7 @@ import android.widget.Scroller;
 import com.why.livelife.Utils.DensityUtils;
 
 import java.util.Arrays;
+import java.util.Calendar;
 
 /**
  * Created by lenovo on 2017/5/9.
@@ -109,8 +110,8 @@ public class DPMonthView extends View implements NestedScrollingChild {
         mLiveRadius = DensityUtils.dp2px(getContext(), 3);
         mPaddingBottom = DensityUtils.dp2px(getContext(), 3);
         mTxtRadius = DensityUtils.dp2px(getContext(), 15);
-        mCurrentYear = 2017;
-        mCurrentMonth = 5;
+        mCurrentYear = Calendar.getInstance().get(Calendar.YEAR);
+        mCurrentMonth = Calendar.getInstance().get(Calendar.MONTH)+1;
         mPaint.setTextSize(mDPDimen.getTitleTxtSize());
         if (mCalendarType==CalendarType.TYPE_CLOSE){
                 DPCellInfo[][] info = mDPManager.obtainDPInfo(mCurrentYear, mCurrentMonth);
@@ -124,6 +125,7 @@ public class DPMonthView extends View implements NestedScrollingChild {
                     }
                 }
         }
+        Log.i(TAG,"mSelectedLine->"+mSelectedLine);
 
     }
 
