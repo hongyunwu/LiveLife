@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_search_tab_scroll"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/search_tab_pic_height"
+        android:layout_height="@dimen/search_tab_pic_height"
+        android:scaleType="fitXY"
+        android:id="@+id/iv_search_portrait"
+        android:src="@drawable/search_tab_scroll_pic01" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tv_search_view_count"
+        android:textColor="@color/tips_txt_color"
+        android:textSize="@dimen/tips_txt_size"
+        android:layout_marginBottom="@dimen/page_horizontal"
+        android:layout_marginTop="@dimen/page_horizontal"
+        android:drawableLeft="@drawable/gray_eye"
+        android:text="11092人" />
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/iv_header_circle_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/page_vertical"
+        android:background="@drawable/navi_header_pic"/>
+
+    <TextView
+        android:id="@+id/tv_header_nick_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_header_circle_pic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/page_horizontal"
+        android:text="1286633847"
+        android:textColor="@color/normal_txt_color"
+        android:textSize="@dimen/normal_txt_size"
+        />
+
+    <TextView
+        android:id="@+id/tv_header_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_header_nick_name"
+        android:layout_centerHorizontal="true"
+        android:text="ID:11111111"
+        android:textColor="@color/tips_txt_color"
+        android:textSize="@dimen/tips_txt_size"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/navi_header_tab"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_header_id"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/tv_header_dynamics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawablePadding="@dimen/content_pic_size"
+            android:drawableTop="@drawable/navi_header_dynamics"
+            android:focusable="true"
+            android:gravity="center_horizontal"
+            android:text="动态"
+            android:background="@drawable/navi_item_selector"
+            android:textColor="@color/normal_txt_color"
+            android:textSize="@dimen/normal_txt_size"/>
+
+        <TextView
+            android:id="@+id/tv_header_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/navi_item_selector"
+            android:clickable="true"
+            android:drawablePadding="@dimen/content_pic_size"
+            android:drawableTop="@drawable/navi_header_message"
+            android:focusable="true"
+            android:gravity="center_horizontal"
+            android:text="消息"
+            android:textColor="@color/normal_txt_color"
+            android:textSize="@dimen/normal_txt_size"/>
+
+        <TextView
+            android:id="@+id/tv_header_private_letter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:background="@drawable/navi_item_selector"
+            android:drawablePadding="@dimen/content_pic_size"
+            android:drawableTop="@drawable/navi_header_private_letter"
+            android:focusable="true"
+            android:text="私信"
+            android:textColor="@color/normal_txt_color"
+            android:textSize="@dimen/normal_txt_size"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_below="@id/navi_header_tab"
+        android:background="@color/line_color"/>
+</RelativeLayout>
+
+          

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/navi_item_selector"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_contacts_item_portrait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/page_vertical"
+        android:layout_marginLeft="@dimen/page_horizontal"
+        android:layout_marginRight="@dimen/page_horizontal"
+        android:layout_marginTop="@dimen/page_vertical"
+        android:background="@drawable/fans_item_portrait" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/page_vertical"
+        android:layout_marginTop="@dimen/page_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_contacts_item_nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="很慵懒的兔子"
+            android:textColor="@color/normal_txt_color"
+            android:textSize="@dimen/content_txt_size" />
+
+        <TextView
+            android:id="@+id/tv_contacts_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/vertical_txt_margin"
+            android:paddingTop="@dimen/vertical_txt_margin"
+            android:text="伍洪云"
+            android:textColor="@color/tips_txt_color"
+            android:textSize="@dimen/tips_txt_size" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/contacts_item_btn_shape"
+        android:text="关注"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:textSize="@dimen/imp_txt_size"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginRight="@dimen/page_horizontal"
+        android:textColor="@color/orange_color"
+        android:drawableLeft="@drawable/contacts_item_plus"
+        android:id="@+id/tv_contacts_item_add" />
+</LinearLayout>

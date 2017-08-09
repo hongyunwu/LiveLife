@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/search_tool_bar"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:background="@drawable/bottom_border_layer"
+
+    android:orientation="vertical"
+    app:contentInsetStart="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.why.livelife.View.ClearEditText
+            android:layout_width="0dp"
+            android:singleLine="true"
+            android:id="@+id/et_search"
+            android:paddingRight="@dimen/page_horizontal"
+            android:layout_marginLeft="@dimen/page_horizontal"
+            android:layout_height="@dimen/search_btn_height"
+            android:imeOptions="actionSearch"
+            android:textColor="@color/normal_txt_color"
+            android:textColorHint="@color/tips_txt_color"
+            android:hint="请输入昵称或ID"
+            android:textSize="@dimen/imp_txt_size"
+            android:drawablePadding="@dimen/content_pic_size"
+            android:drawableLeft="@drawable/search"
+            android:paddingLeft="@dimen/page_horizontal"
+            android:background="@drawable/search_border_shape"
+            android:textCursorDrawable="@drawable/txt_cursor_shape"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center"
+            android:minWidth="0dp"
+            android:paddingLeft="@dimen/page_horizontal"
+            android:paddingRight="@dimen/page_vertical"
+            android:text="取消"
+            android:id="@+id/btn_cancel"
+            android:textColor="@color/normal_txt_color"
+            android:textSize="@dimen/tab_txt_size" />
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>

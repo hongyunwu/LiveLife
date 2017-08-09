@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/srl_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyleview_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="-3dp"
+            android:paddingRight="-3dp">
+
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/ll_fans_no_user"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fans_personal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/page_horizontal"
+            android:includeFontPadding="false"
+            android:text="你关注的用户太少，"
+            android:textSize="@dimen/imp_txt_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/page_horizontal"
+            android:includeFontPadding="false"
+            android:text="快去找点好玩的关注一下~"
+            android:textSize="@dimen/imp_txt_size" />
+
+        <Button
+            android:id="@+id/btn_fans_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginLeft="@dimen/fans_btn_margin_horizontal"
+            android:layout_marginRight="@dimen/fans_btn_margin_horizontal"
+            android:layout_marginTop="@dimen/fans_btn_margin_vertical"
+            android:background="@drawable/fans_contacts_selector"
+            android:text="关注通讯录好友"
+            android:textColor="@color/white"
+            android:textSize="@dimen/imp_txt_size" />
+
+        <Button
+            android:id="@+id/btn_fans_interests"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginLeft="@dimen/fans_btn_margin_horizontal"
+            android:layout_marginRight="@dimen/fans_btn_margin_horizontal"
+            android:layout_marginTop="@dimen/fans_btn_margin_vertical"
+            android:background="@drawable/fans_interests_selector"
+            android:text="你可能感兴趣的用户"
+            android:textColor="@color/white"
+            android:textSize="@dimen/imp_txt_size" />
+
+    </LinearLayout>
+</RelativeLayout>

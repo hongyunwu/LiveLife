@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:layout_gravity="bottom"
+    android:background="@color/white"
+    app:layout_behavior="com.why.livelife.Behavior.HomeBottomTabBehavior"
+    android:orientation="horizontal">
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:id="@+id/ib_home_tab_main"
+        android:background="@null"
+        android:layout_height="match_parent"
+        android:src="@drawable/home_tab_main"/>
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent" />
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:id="@+id/ib_home_tab_history"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:src="@drawable/home_tab_history"/>
+
+</LinearLayout>

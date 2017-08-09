@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@drawable/navi_item_protect"
+            android:id="@+id/navi_item_protect"
+            android:title="我的守护"/>
+        <item
+            android:icon="@drawable/navi_item_fans"
+            android:id="@+id/navi_item_fans"
+            android:title="我的关注"/>
+        <item
+            android:icon="@drawable/navi_item_video"
+            android:id="@+id/navi_item_video"
+            android:title="小视频"/>
+        <item
+            android:icon="@drawable/navi_item_money"
+            android:id="@+id/navi_item_money"
+            android:title="我的收益"/>
+        <item
+            android:icon="@drawable/navi_item_account"
+            android:id="@+id/navi_item_account"
+            android:title="我的账户"/>
+        <item
+            android:icon="@drawable/navi_item_level"
+            android:id="@+id/navi_item_level"
+            android:title="我的等级"/>
+        <item
+            android:icon="@drawable/navi_item_certification"
+            android:id="@+id/navi_item_certification"
+            android:title="实名认证"/>
+        <item
+            android:icon="@drawable/navi_item_scan"
+            android:id="@+id/navi_item_scan"
+            android:title="扫一扫"/>
+        <item
+            android:icon="@drawable/navi_item_setting"
+            android:id="@+id/navi_item_setting"
+            android:title="设置"/>
+    </group>
+</menu>

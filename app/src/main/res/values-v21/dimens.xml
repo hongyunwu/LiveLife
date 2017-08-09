@@ -1,0 +1,3 @@
+<resources>
+    <dimen name="cardview_layout_margin">1dp</dimen>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_contacts"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:background="@color/sub_light_blue_color"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/page_horizontal"
+            android:background="@drawable/contacts_smile_face" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/page_horizontal"
+            android:text="绑定手机，让更多朋友发现你！"
+            android:textColor="@color/white"
+            android:textSize="@dimen/imp_txt_size"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="@dimen/imp_txt_size"
+            android:text="绑定"
+            android:id="@+id/btn_contacts_binding"
+            android:textAlignment="textEnd"
+            android:layout_gravity="end"
+            android:drawablePadding="@dimen/page_horizontal"
+            android:drawableRight="@drawable/contacts_right_anchor"
+            android:paddingRight="@dimen/page_horizontal"
+            android:background="@null"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recycleview_contacts"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
