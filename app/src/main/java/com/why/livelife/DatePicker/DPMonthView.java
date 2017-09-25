@@ -520,6 +520,13 @@ public class DPMonthView extends View implements NestedScrollingChild {
          * @param date 参数日期形式：yyyy-MM-dd
          */
         void onDatePick(String date);
+
+	    /**
+	     *
+         * @param year
+         * @param month
+         */
+        void onMonthChanged(int year ,int month);
     }
 
     public void setOnDatePickClickListener(OnDatePickerClickListener onDatePickerClickListener) {
@@ -606,6 +613,12 @@ public class DPMonthView extends View implements NestedScrollingChild {
                 //scrollTo(0, 0);
                 invalidate();
             }*/
+
+            if (onDatePickerClickListener!=null){
+                onDatePickerClickListener.onMonthChanged(mCurrentYear,mCurrentMonth);
+
+            }
+
         }
     }
 }

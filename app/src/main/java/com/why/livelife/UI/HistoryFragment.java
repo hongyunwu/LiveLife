@@ -124,6 +124,11 @@ public class HistoryFragment extends BaseMainFragment implements DPMonthView.OnD
         Toast.makeText(getContext(), date, Toast.LENGTH_SHORT).show();
     }
 
+    @Override
+    public void onMonthChanged(int year, int month) {
+        Log.i(TAG, "onMonthChanged...year:"+year+",month:"+month);
+    }
+
     public String getDateStr(String dateStr) {
         String[] split = dateStr.split("-");
         return split[1] + "月" + split[2] + "日";
